@@ -3,58 +3,91 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Page test Fabien Rodet</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 </head>
 <body>
 
-<!--Appel de scripts--> 
+<!-- Appel de scripts via npm -->
+	
+	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<!--Appel de scripts et liens
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<!--Fin appel de scripts--> 
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+<!--Fin appel de scripts et liens-->
+
 
 	<nav class="navbar navbar-expand lg navbar-light bg-lignt col 12">
 	<a class="navbar-brand" href="#">MENU</a></nav>
 
 	<div class="col 12">
-			<img src="webdesign1.jpg" class="img-fluid col 12" alt="Responsive image">
-			<p><h1>Coucou</h1></p>
+			<img id="photos" src="webdesign1.jpg" class="img-fluid col 12" alt="Responsive image">
+			<p><h1>Bonjour</h1></p>
+			<h2 class="result">loading...</h2>
+			<script type="text/javascript">console.log("Bonjour")</script>
 	</div>
 	<div class="row">
-			<div class="col 12">
-				<img src="webdesign1.jpg" class="img-fluid col 12" alt="Responsive image">
-				<p><h1>Coucou</h1></p>
-			</div>
-			<div class="col 12">
-				<img src="webdesign1.jpg" class="img-fluid col 12" alt="Responsive image">
-				<p><h1>Coucou</h1></p>
-			</div>
-			<div class="col 12">
-				<img src="webdesign1.jpg" class="img-fluid col 12" alt="Responsive image">
-				<p><h1>Coucou</h1></p>
-			</div>
-			<div class="col 12">
-				<img src="webdesign1.jpg" class="img-fluid col 12" alt="Responsive image">
-				<p><h1>Coucou</h1></p>
-			</div>
-			<div class="col 12">
-				<img src="webdesign1.jpg" class="img-fluid col 12" alt="Responsive image">
-				<p><h1>Coucou</h1></p>
-			</div>
-
-
-
-
-
-
-
-
+		<div class="col 12">
+			<img src="web-design-agency.png" class="img-fluid col 12" alt="Responsive image">
+			<p><h1>Bonjour</h1></p>
+			<!--<span>
+				<p class="result">
+				loading...
+				</p>
+				<script type="text/javascript">console.log("Bonjour")</script>
+			</span>-->
+		</div>
+		<div class="col 12">
+			<img src="web-design-agency.png" class="img-fluid col 12" alt="Responsive image">
+			<p><h1>Bonjour</h1></p>
+		</div>
+		<div class="col 12">
+			<img src="web-design-agency.png" class="img-fluid col 12" alt="Responsive image">
+			<p><h1>Bonjour</h1></p>
+		</div>
+		<div class="col 12">
+			<img src="web-design-agency.png" class="img-fluid col 12" alt="Responsive image">
+			<p><h1>Bonjour</h1></p>
+		</div>
+		<div class="col 12">
+			<img src="web-design-agency.png" class="img-fluid col 12" alt="Responsive image">
+			<p><h1>Bonjour</h1></p>
+		</div>
 	<div id="conteneur">
 		<article>
 			<h2>Bienvenue !</h2>
+			<!--<img src="webdesign1.jpg" id="photos" alt="Responsive image">-->
 			<p>Bienvenue sur mon site</p>
-	 		<p><img class="couverture" src="images/123.jpg" alt="Photo" /></p>
+	 		<p><img src="webdesign1.jpg" class="img-fluid col 12" alt="Responsive image"></p>
 		</article>
 	</div>
+	<script type="text/javascript">
+		$('#photos').mouseover(function(){
+			console.log('survol');
+		});
+	</script>
+	<script type="text/javascript">
+		console.log('1 - Debut de la requete AJAX');
+
+		$.get( "https://swapi.co/api/people/1/?format=json", function( data ) {
+		$( ".result" ).html( data.name );
+			 console.log('2 - resultat de la requete AJAX');
+		});
+
+		console.log('3 - fin de la requete AJAX');
+	</script>
+
 </body>
 </html>
