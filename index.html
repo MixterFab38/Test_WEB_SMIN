@@ -150,7 +150,7 @@
 		
 	
 		<div class="card" style="width: 20rem;">
-		  <img class="card-img-top" src="C-3PO.jpg" alt="Card image cap">
+		  <img class="card-img-top" src="c3po.jpg" alt="Card image cap">
 		  <div class="card-body">
 		    <h4 class="card-title r2">Card title</h4>
 		    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg2">+ d'infos</button>
@@ -233,7 +233,7 @@
 	<div class="col l4">
 		
 		<div class="card" style="width: 20rem;">
-		  <img class="card-img-top" src="R2d2.jpg" alt="Card image cap">
+		  <img class="card-img-top" src="r2d2.jpg" alt="Card image cap">
 		  <div class="card-body">
 		    <h4 class="card-title r3">Card title</h4>
 		    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg3">+ d'infos</button>
@@ -323,7 +323,7 @@
 	<div class="col l4">
 		
 		<div class="card" style="width: 20rem;">
-		  <img class="card-img-top" src="Darth-Vader.jpg" alt="Card image cap">
+		  <img class="card-img-top" src="darkvador.jpg" alt="Card image cap">
 		  <div class="card-body">
 		    <h4 class="card-title r4">Card title</h4>
 		    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg4">+ d'infos</button>
@@ -418,7 +418,7 @@
 		
 	
 		<div class="card" style="width: 20rem;">
-		  <img class="card-img-top" src="Leia Organa.jpg" alt="Card image cap">
+		  <img class="card-img-top" src="leia.jpg" alt="Card image cap">
 		  <div class="card-body">
 		    <h4 class="card-title r5">Card title</h4>
 		    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg5">+ d'infos</button>
@@ -515,7 +515,7 @@
 	<div class="col l4">
 		
 		<div class="card" style="width: 20rem;">
-		  <img class="card-img-top" src="Owen-Lars.jpeg" alt="Card image cap">
+		  <img class="card-img-top" src="owen.jpg" alt="Card image cap">
 		  <div class="card-body">
 		    <h4 class="card-title r6">Card title</h4>
 		    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg6">+ d'infos</button>
@@ -610,6 +610,323 @@
 
 		console.log('3 - fin de la requete AJAX');
 	</script>
+
+			<!-- PERMET DE RECUPERER LES INFOFORMATIONS DES PERSONNAGES -->
+		<script>
+			$(document).ready(function()
+  				{
+
+
+  					$.get( "https://swapi.co/api/starships/13/", function(data)
+					{
+						var i = ".star13";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.model));
+						$(i).append($("<li>").text(data.manufacturer));
+						$(i).append($("<li>").text(data.cost_in_credits));
+						$(i).append($("<li>").text(data.lenght));
+						$(i).append($("<li>").text(data.max_atmosphering_speed));
+						$(i).append($("<li>").text(data.crew));
+						$(i).append($("<li>").text(data.passengers));
+						$(i).append($("<li>").text(data.cargo_capacity));
+						$(i).append($("<li>").text(data.consumables));
+						$(i).append($("<li>").text(data.hyperdrive_rating));
+						$(i).append($("<li>").text(data.MGLT));
+						$(i).append($("<li>").text(data.starship_class));
+  					})
+
+  					$.get( "https://swapi.co/api/starships/22/", function(data)
+					{
+						var i = ".star22";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.model));
+						$(i).append($("<li>").text(data.manufacturer));
+						$(i).append($("<li>").text(data.cost_in_credits));
+						$(i).append($("<li>").text(data.lenght));
+						$(i).append($("<li>").text(data.max_atmosphering_speed));
+						$(i).append($("<li>").text(data.crew));
+						$(i).append($("<li>").text(data.passengers));
+						$(i).append($("<li>").text(data.cargo_capacity));
+						$(i).append($("<li>").text(data.consumables));
+						$(i).append($("<li>").text(data.hyperdrive_rating));
+						$(i).append($("<li>").text(data.MGLT));
+						$(i).append($("<li>").text(data.starship_class));
+  					})
+
+  					$.get( "https://swapi.co/api/starships/12/", function(data)
+					{
+						var i = ".star12";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.model));
+						$(i).append($("<li>").text(data.manufacturer));
+						$(i).append($("<li>").text(data.cost_in_credits));
+						$(i).append($("<li>").text(data.lenght));
+						$(i).append($("<li>").text(data.max_atmosphering_speed));
+						$(i).append($("<li>").text(data.crew));
+						$(i).append($("<li>").text(data.passengers));
+						$(i).append($("<li>").text(data.cargo_capacity));
+						$(i).append($("<li>").text(data.consumables));
+						$(i).append($("<li>").text(data.hyperdrive_rating));
+						$(i).append($("<li>").text(data.MGLT));
+						$(i).append($("<li>").text(data.starship_class));
+  					})
+
+  					$.get( "https://swapi.co/api/vehicles/30/", function(data)
+					{
+						var i = ".vehi30";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.model));
+						$(i).append($("<li>").text(data.manufacturer));
+						$(i).append($("<li>").text(data.cost_in_credits));
+						$(i).append($("<li>").text(data.lenght));
+						$(i).append($("<li>").text(data.max_atmosphering_speed));
+						$(i).append($("<li>").text(data.crew));
+						$(i).append($("<li>").text(data.passengers));
+						$(i).append($("<li>").text(data.cargo_capacity));
+						$(i).append($("<li>").text(data.consumables));
+						$(i).append($("<li>").text(data.vehicle_class));
+  					})
+
+  					$.get( "https://swapi.co/api/vehicles/14/", function(data)
+					{
+						var i = ".vehi14";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.model));
+						$(i).append($("<li>").text(data.manufacturer));
+						$(i).append($("<li>").text(data.cost_in_credits));
+						$(i).append($("<li>").text(data.lenght));
+						$(i).append($("<li>").text(data.max_atmosphering_speed));
+						$(i).append($("<li>").text(data.crew));
+						$(i).append($("<li>").text(data.passengers));
+						$(i).append($("<li>").text(data.cargo_capacity));
+						$(i).append($("<li>").text(data.consumables));
+						$(i).append($("<li>").text(data.vehicle_class));
+  					})
+
+  					$.get( "https://swapi.co/api/species/1/", function(data)
+					{
+						var i = ".spe1";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.classification));
+						$(i).append($("<li>").text(data.designation));
+						$(i).append($("<li>").text(data.average_height));
+						$(i).append($("<li>").text(data.skin_colors));
+						$(i).append($("<li>").text(data.hair_colors));
+						$(i).append($("<li>").text(data.eye_colors));
+						$(i).append($("<li>").text(data.average_lifespan));
+						$(i).append($("<li>").text(data.language));
+  					})
+
+  					$.get( "https://swapi.co/api/species/2/", function(data)
+					{
+						var i = ".spe2";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.classification));
+						$(i).append($("<li>").text(data.designation));
+						$(i).append($("<li>").text(data.average_height));
+						$(i).append($("<li>").text(data.skin_colors));
+						$(i).append($("<li>").text(data.hair_colors));
+						$(i).append($("<li>").text(data.eye_colors));
+						$(i).append($("<li>").text(data.average_lifespan));
+						$(i).append($("<li>").text(data.language));
+  					})
+
+  					$.get( "https://swapi.co/api/films/7/", function(data)
+					{
+						var i = ".f7";
+						$(i).append($("<li>").text(data.title));
+						$(i).append($("<li>").text(data.episode_id));
+						$(i).append($("<li>").text(data.director));
+						$(i).append($("<li>").text(data.producer));
+						$(i).append($("<li>").text(data.release_date));
+  					})
+
+  					$.get( "https://swapi.co/api/films/5/", function(data)
+					{
+						var i = ".f5";
+						$(i).append($("<li>").text(data.title));
+						$(i).append($("<li>").text(data.episode_id));
+						$(i).append($("<li>").text(data.director));
+						$(i).append($("<li>").text(data.producer));
+						$(i).append($("<li>").text(data.release_date));
+  					})
+
+  					$.get( "https://swapi.co/api/films/1/", function(data)
+					{
+						var i = ".f1";
+						$(i).append($("<li>").text(data.title));
+						$(i).append($("<li>").text(data.episode_id));
+						$(i).append($("<li>").text(data.director));
+						$(i).append($("<li>").text(data.producer));
+						$(i).append($("<li>").text(data.release_date));
+  					})
+
+  					$.get( "https://swapi.co/api/films/3/", function(data)
+					{
+						var i = ".f3";
+						$(i).append($("<li>").text(data.title));
+						$(i).append($("<li>").text(data.episode_id));
+						$(i).append($("<li>").text(data.director));
+						$(i).append($("<li>").text(data.producer));
+						$(i).append($("<li>").text(data.release_date));
+  					})
+
+  					$.get( "https://swapi.co/api/films/4/", function(data)
+					{
+						var i = ".f4";
+						$(i).append($("<li>").text(data.title));
+						$(i).append($("<li>").text(data.episode_id));
+						$(i).append($("<li>").text(data.director));
+						$(i).append($("<li>").text(data.producer));
+						$(i).append($("<li>").text(data.release_date));
+  					})
+
+  					$.get( "https://swapi.co/api/films/6/", function(data)
+					{
+						var i = ".f6";
+						$(i).append($("<li>").text(data.title));
+						$(i).append($("<li>").text(data.episode_id));
+						$(i).append($("<li>").text(data.director));
+						$(i).append($("<li>").text(data.producer));
+						$(i).append($("<li>").text(data.release_date));
+  					})
+
+  					$.get( "https://swapi.co/api/films/2/", function(data)
+					{
+						var i = ".f2";
+						$(i).append($("<li>").text(data.title));
+						$(i).append($("<li>").text(data.episode_id));
+						$(i).append($("<li>").text(data.director));
+						$(i).append($("<li>").text(data.producer));
+						$(i).append($("<li>").text(data.release_date));
+  					})
+
+
+  					$.get( "https://swapi.co/api/planets/1/", function(data)
+					{
+						var i = ".pla1";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.rotation_period));
+						$(i).append($("<li>").text(data.orbital_period));
+						$(i).append($("<li>").text(data.diameter));
+						$(i).append($("<li>").text(data.climate));
+						$(i).append($("<li>").text(data.gravity));
+						$(i).append($("<li>").text(data.terrain));
+						$(i).append($("<li>").text(data.surface_water));
+						$(i).append($("<li>").text(data.population));
+
+  					})
+
+  					$.get( "https://swapi.co/api/planets/2/", function(data)
+					{
+						var i = ".pla2";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.rotation_period));
+						$(i).append($("<li>").text(data.orbital_period));
+						$(i).append($("<li>").text(data.diameter));
+						$(i).append($("<li>").text(data.climate));
+						$(i).append($("<li>").text(data.gravity));
+						$(i).append($("<li>").text(data.terrain));
+						$(i).append($("<li>").text(data.surface_water));
+						$(i).append($("<li>").text(data.population));
+
+  					})
+
+  					$.get( "https://swapi.co/api/planets/8/", function(data)
+					{
+						var i = ".pla8";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.rotation_period));
+						$(i).append($("<li>").text(data.orbital_period));
+						$(i).append($("<li>").text(data.diameter));
+						$(i).append($("<li>").text(data.climate));
+						$(i).append($("<li>").text(data.gravity));
+						$(i).append($("<li>").text(data.terrain));
+						$(i).append($("<li>").text(data.surface_water));
+						$(i).append($("<li>").text(data.population));
+
+  					})
+
+  					$.get( "https://swapi.co/api/people/1/?format=json", function(data)
+					{
+						var i = ".per1";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.height));
+						$(i).append($("<li>").text(data.mass));
+						$(i).append($("<li>").text(data.hair_color));
+						$(i).append($("<li>").text(data.skin_color));
+						$(i).append($("<li>").text(data.eye_color));
+						$(i).append($("<li>").text(data.birth_year));
+						$(i).append($("<li>").text(data.gender));
+  					})
+
+  					$.get( "https://swapi.co/api/people/2/?format=json", function(data)
+					{
+						var i = ".per2";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.height));
+						$(i).append($("<li>").text(data.mass));
+						$(i).append($("<li>").text(data.hair_color));
+						$(i).append($("<li>").text(data.skin_color));
+						$(i).append($("<li>").text(data.eye_color));
+						$(i).append($("<li>").text(data.birth_year));
+						$(i).append($("<li>").text(data.gender));
+  					})
+
+  					$.get( "https://swapi.co/api/people/3/?format=json", function(data)
+					{
+						var i = ".per3";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.height));
+						$(i).append($("<li>").text(data.mass));
+						$(i).append($("<li>").text(data.hair_color));
+						$(i).append($("<li>").text(data.skin_color));
+						$(i).append($("<li>").text(data.eye_color));
+						$(i).append($("<li>").text(data.birth_year));
+						$(i).append($("<li>").text(data.gender));
+  					})
+
+  					$.get( "https://swapi.co/api/people/4/?format=json", function(data)
+					{
+						var i = ".per4";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.height));
+						$(i).append($("<li>").text(data.mass));
+						$(i).append($("<li>").text(data.hair_color));
+						$(i).append($("<li>").text(data.skin_color));
+						$(i).append($("<li>").text(data.eye_color));
+						$(i).append($("<li>").text(data.birth_year));
+						$(i).append($("<li>").text(data.gender));
+  					})
+
+  					$.get( "https://swapi.co/api/people/5/?format=json", function(data)
+					{
+						var i = ".per5";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.height));
+						$(i).append($("<li>").text(data.mass));
+						$(i).append($("<li>").text(data.hair_color));
+						$(i).append($("<li>").text(data.skin_color));
+						$(i).append($("<li>").text(data.eye_color));
+						$(i).append($("<li>").text(data.birth_year));
+						$(i).append($("<li>").text(data.gender));
+  					})
+
+  					$.get( "https://swapi.co/api/people/6/?format=json", function(data)
+					{
+						var i = ".per6";
+						$(i).append($("<li>").text(data.name));
+						$(i).append($("<li>").text(data.height));
+						$(i).append($("<li>").text(data.mass));
+						$(i).append($("<li>").text(data.hair_color));
+						$(i).append($("<li>").text(data.skin_color));
+						$(i).append($("<li>").text(data.eye_color));
+						$(i).append($("<li>").text(data.birth_year));
+						$(i).append($("<li>").text(data.gender));
+  					})
+
+  				})
+		</script>
 
 </body>
 </html>
