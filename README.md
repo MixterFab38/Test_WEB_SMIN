@@ -7,6 +7,7 @@ Installation : Télécharger ce projet en cliquant sur "Clone or download" puis 
 Créateur : Fabien RODET.
 
 ===============================
+
 EN :
 This project is about creating a HTML page to retrieve data from a Star Wars API (SWAPI).
 
