@@ -1,0 +1,951 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>smin yeoman</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!--<link rel="stylesheet" href="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js">
+    <link rel="stylesheet" type="text/css" href="">-->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<!-- Appel de scripts via npm -->
+  
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<!--Appel de scripts et liens
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<!--Fin appel de scripts et liens-->
+
+
+  <nav class="navbar navbar-expand lg navbar-light bg-lignt col 12">
+  <a class="navbar-brand" href="#">STAR WARS</a></nav>
+
+  <div class="col 12">
+      <img id="photos" src="images/1200px-Star_Wars_Logo.png" class="img-fluid col 12" alt="Responsive image">
+      <p><h1>Bonjour</h1></p>
+      <h2 class="result">loading...</h2>
+      <script type="text/javascript">console.log("Bonjour")</script>
+  </div>
+  <div class="row">
+    <div class="col 12">
+    <!-- CARDS -->
+
+<div class="row">
+  <div class="col l4">
+    
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="images/luke.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title r1">Card title</h4>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">+ d'infos</button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infos sur le presonnage</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          
+
+            <table class="table">
+          <thead>
+            <tr>
+         
+              <th scope="col">Détail Perso.</th>
+              <th scope="col">Planète</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+              <td class="per1"></td>
+              <td class="pla1"></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <th scope="col">FILM 1</th>
+                <th scope="col">FILM 2</th>
+                <th scope="col">FILM 3</th>
+                <th scope="col">FILM 4</th>
+                <th scope="col">FILM 5</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+             
+              <td class="f1"></td>
+              <td class="f2"></td>
+              <td class="f3"></td>
+              <td class="f6"></td>
+              <td class="f7"></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="col">Espèce</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class="spe1"></td>
+            </tr>
+          </tbody>
+           <tbody>
+            <tr>
+              <th scope="col">Véhicule 1</th>
+              <th scope="col">Véhicule 2</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class="vehi14"></td>
+              <td class="vehi30"></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="col">Vaisseau 1</th>
+              <th scope="col">Vaisseau 2</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class="star12"></td>
+              <td class="star22"></td>
+            </tr>
+          </tbody>
+        </table>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col l4">
+    
+  
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="images/c3po.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title r2">Card title</h4>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg2">+ d'infos</button>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infos sur le presonnage</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <div class="modal-body">
+          
+
+              <table class="table">
+            <thead>
+              <tr>
+           
+                <th scope="col">Détails personnage</th>
+                <th scope="col">Planète</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                
+                <td class="per2"></td>
+                <td class="pla1"></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                
+                <th scope="col">Film 1</th>
+                  <th scope="col">Film 2</th>
+                  <th scope="col">Film 3</th>
+                  <th scope="col">Film 4</th>
+                  <th scope="col">Film 5</th>
+                  <th scope="col">Film 6</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+               
+                <td class="f1"></td>
+                <td class="f2"></td>
+                <td class="f3"></td>
+                <td class="f4"></td>
+                <td class="f5"></td>
+                <td class="f6"></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th scope="col">Espèce</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="spe2"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+         
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col l4">
+    
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="images/r2d2.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title r3">Card title</h4>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg3">+ d'infos</button>
+      </div>
+    </div>
+
+
+
+    
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infos sur le presonnage</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          
+
+            <table class="table">
+          <thead>
+            <tr>
+         
+              <th scope="col">Détails personnage</th>
+              <th scope="col">Planète</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+              <td class="per3"></td>
+              <td class="pla8"></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <th scope="col">Film 1</th>
+                <th scope="col">Film 2</th>
+                <th scope="col">Film 3</th>
+                <th scope="col">Film 4</th>
+                <th scope="col">Film 5</th>
+                <th scope="col">Film 6</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+             
+              <td class="f1"></td>
+              <td class="f2"></td>
+              <td class="f3"></td>
+              <td class="f4"></td>
+              <td class="f5"></td>
+              <td class="f6"></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="col">Espèce</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class="spe2"></td>
+            </tr>
+          </tbody>
+        </table>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+<div class="row">
+  <div class="col l4">
+    
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="images/darkvador.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title r4">Card title</h4>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg4">+ d'infos</button>
+      </div>
+    </div>
+
+
+
+    
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infos sur le presonnage</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          
+
+            <table class="table">
+          <thead>
+            <tr>
+         
+              <th scope="col">Détails personnage</th>
+              <th scope="col">Planète</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+              <td class="per4"></td>
+                <td class="pla1"></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <th scope="col">Film 1</th>
+                <th scope="col">Film 2</th>
+                <th scope="col">Film 3</th>
+                <th scope="col">Film 4</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+             
+              <td class="f1"></td>
+              <td class="f2"></td>
+              <td class="f3"></td>
+              <td class="f6"></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="col">Espèce</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+                <td class="spe1"></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="col">Vaisseau</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+                <td class="star13"></td>
+            </tr>
+          </tbody>
+        </table>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+    
+  <div class="col l4">
+    
+  
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="images/leia.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title r5">Card title</h4>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg5">+ d'infos</button>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infos sur le presonnage</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <div class="modal-body">
+          
+
+              <table class="table">
+            <thead>
+              <tr>
+           
+                <th scope="col">Détails personnage</th>
+                  <th scope="col">Planète</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                
+                  <td class="per5"></td>
+                  <td class="pla2"></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                
+                <th scope="col">Film 1</th>
+                  <th scope="col">Film 2</th>
+                  <th scope="col">Film 3</th>
+                  <th scope="col">Film 4</th>
+                  <th scope="col">Film 5</th>
+                  
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+               
+                  <td class="f1"></td>
+                  <td class="f2"></td>
+                  <td class="f3"></td>
+                  <td class="f6"></td>
+                  <td class="f7"></td>
+              
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th scope="col">Espèce</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                  <td class="spe1"></td>
+              </tr>
+            </tbody>
+
+             <tbody>
+            <tr>
+              <th scope="col">Véhcule</th>
+              
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+           
+              <td class="vehi30"></td>
+            </tr>
+          </tbody>
+         
+          </table>
+        </div>
+         
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col l4">
+    
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="images/owen.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title r6">Card title</h4>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg6">+ d'infos</button>
+      </div>
+    </div>
+
+
+
+    
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Infos sur le presonnage</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          
+
+            <table class="table">
+          <thead>
+            <tr>
+         
+              <th scope="col">Détails personage</th>
+              <th scope="col">Planète</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+                <td class="per6"></td>
+                <td class="pla1"></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <th scope="col">Film 1</th>
+                <th scope="col">Film 2</th>
+                <th scope="col">Film 3</th>
+                  
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+             
+              <td class="f1"></td>
+                <td class="f5"></td>
+                <td class="f6"></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="col">Espèce</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+                <td class="spe2"></td>
+            </tr>
+          </tbody>
+        </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <script type="text/javascript">
+    $('#photos').mouseover(function(){
+      console.log('survol');
+    });
+  </script>
+  <script type="text/javascript">
+    console.log('1 - Debut de la requete AJAX');
+
+    $.get( "https://swapi.co/api/people/1/?format=json", function( data ) {
+    $( ".result" ).html( data.name );
+       console.log('2 - resultat de la requete AJAX');
+    });
+
+    console.log('3 - fin de la requete AJAX');
+  </script>
+
+      <!-- PERMET DE RECUPERER LES INFOFORMATIONS DES PERSONNAGES -->
+    <script>
+      $(document).ready(function()
+          {
+
+
+            $.get( "https://swapi.co/api/starships/13/", function(data)
+          {
+            var i = ".star13";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.model));
+            $(i).append($("<li>").text(data.manufacturer));
+            $(i).append($("<li>").text(data.cost_in_credits));
+            $(i).append($("<li>").text(data.lenght));
+            $(i).append($("<li>").text(data.max_atmosphering_speed));
+            $(i).append($("<li>").text(data.crew));
+            $(i).append($("<li>").text(data.passengers));
+            $(i).append($("<li>").text(data.cargo_capacity));
+            $(i).append($("<li>").text(data.consumables));
+            $(i).append($("<li>").text(data.hyperdrive_rating));
+            $(i).append($("<li>").text(data.MGLT));
+            $(i).append($("<li>").text(data.starship_class));
+            })
+
+            $.get( "https://swapi.co/api/starships/22/", function(data)
+          {
+            var i = ".star22";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.model));
+            $(i).append($("<li>").text(data.manufacturer));
+            $(i).append($("<li>").text(data.cost_in_credits));
+            $(i).append($("<li>").text(data.lenght));
+            $(i).append($("<li>").text(data.max_atmosphering_speed));
+            $(i).append($("<li>").text(data.crew));
+            $(i).append($("<li>").text(data.passengers));
+            $(i).append($("<li>").text(data.cargo_capacity));
+            $(i).append($("<li>").text(data.consumables));
+            $(i).append($("<li>").text(data.hyperdrive_rating));
+            $(i).append($("<li>").text(data.MGLT));
+            $(i).append($("<li>").text(data.starship_class));
+            })
+
+            $.get( "https://swapi.co/api/starships/12/", function(data)
+          {
+            var i = ".star12";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.model));
+            $(i).append($("<li>").text(data.manufacturer));
+            $(i).append($("<li>").text(data.cost_in_credits));
+            $(i).append($("<li>").text(data.lenght));
+            $(i).append($("<li>").text(data.max_atmosphering_speed));
+            $(i).append($("<li>").text(data.crew));
+            $(i).append($("<li>").text(data.passengers));
+            $(i).append($("<li>").text(data.cargo_capacity));
+            $(i).append($("<li>").text(data.consumables));
+            $(i).append($("<li>").text(data.hyperdrive_rating));
+            $(i).append($("<li>").text(data.MGLT));
+            $(i).append($("<li>").text(data.starship_class));
+            })
+
+            $.get( "https://swapi.co/api/vehicles/30/", function(data)
+          {
+            var i = ".vehi30";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.model));
+            $(i).append($("<li>").text(data.manufacturer));
+            $(i).append($("<li>").text(data.cost_in_credits));
+            $(i).append($("<li>").text(data.lenght));
+            $(i).append($("<li>").text(data.max_atmosphering_speed));
+            $(i).append($("<li>").text(data.crew));
+            $(i).append($("<li>").text(data.passengers));
+            $(i).append($("<li>").text(data.cargo_capacity));
+            $(i).append($("<li>").text(data.consumables));
+            $(i).append($("<li>").text(data.vehicle_class));
+            })
+
+            $.get( "https://swapi.co/api/vehicles/14/", function(data)
+          {
+            var i = ".vehi14";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.model));
+            $(i).append($("<li>").text(data.manufacturer));
+            $(i).append($("<li>").text(data.cost_in_credits));
+            $(i).append($("<li>").text(data.lenght));
+            $(i).append($("<li>").text(data.max_atmosphering_speed));
+            $(i).append($("<li>").text(data.crew));
+            $(i).append($("<li>").text(data.passengers));
+            $(i).append($("<li>").text(data.cargo_capacity));
+            $(i).append($("<li>").text(data.consumables));
+            $(i).append($("<li>").text(data.vehicle_class));
+            })
+
+            $.get( "https://swapi.co/api/species/1/", function(data)
+          {
+            var i = ".spe1";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.classification));
+            $(i).append($("<li>").text(data.designation));
+            $(i).append($("<li>").text(data.average_height));
+            $(i).append($("<li>").text(data.skin_colors));
+            $(i).append($("<li>").text(data.hair_colors));
+            $(i).append($("<li>").text(data.eye_colors));
+            $(i).append($("<li>").text(data.average_lifespan));
+            $(i).append($("<li>").text(data.language));
+            })
+
+            $.get( "https://swapi.co/api/species/2/", function(data)
+          {
+            var i = ".spe2";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.classification));
+            $(i).append($("<li>").text(data.designation));
+            $(i).append($("<li>").text(data.average_height));
+            $(i).append($("<li>").text(data.skin_colors));
+            $(i).append($("<li>").text(data.hair_colors));
+            $(i).append($("<li>").text(data.eye_colors));
+            $(i).append($("<li>").text(data.average_lifespan));
+            $(i).append($("<li>").text(data.language));
+            })
+
+            $.get( "https://swapi.co/api/films/7/", function(data)
+          {
+            var i = ".f7";
+            $(i).append($("<li>").text(data.title));
+            $(i).append($("<li>").text(data.episode_id));
+            $(i).append($("<li>").text(data.director));
+            $(i).append($("<li>").text(data.producer));
+            $(i).append($("<li>").text(data.release_date));
+            })
+
+            $.get( "https://swapi.co/api/films/5/", function(data)
+          {
+            var i = ".f5";
+            $(i).append($("<li>").text(data.title));
+            $(i).append($("<li>").text(data.episode_id));
+            $(i).append($("<li>").text(data.director));
+            $(i).append($("<li>").text(data.producer));
+            $(i).append($("<li>").text(data.release_date));
+            })
+
+            $.get( "https://swapi.co/api/films/1/", function(data)
+          {
+            var i = ".f1";
+            $(i).append($("<li>").text(data.title));
+            $(i).append($("<li>").text(data.episode_id));
+            $(i).append($("<li>").text(data.director));
+            $(i).append($("<li>").text(data.producer));
+            $(i).append($("<li>").text(data.release_date));
+            })
+
+            $.get( "https://swapi.co/api/films/3/", function(data)
+          {
+            var i = ".f3";
+            $(i).append($("<li>").text(data.title));
+            $(i).append($("<li>").text(data.episode_id));
+            $(i).append($("<li>").text(data.director));
+            $(i).append($("<li>").text(data.producer));
+            $(i).append($("<li>").text(data.release_date));
+            })
+
+            $.get( "https://swapi.co/api/films/4/", function(data)
+          {
+            var i = ".f4";
+            $(i).append($("<li>").text(data.title));
+            $(i).append($("<li>").text(data.episode_id));
+            $(i).append($("<li>").text(data.director));
+            $(i).append($("<li>").text(data.producer));
+            $(i).append($("<li>").text(data.release_date));
+            })
+
+            $.get( "https://swapi.co/api/films/6/", function(data)
+          {
+            var i = ".f6";
+            $(i).append($("<li>").text(data.title));
+            $(i).append($("<li>").text(data.episode_id));
+            $(i).append($("<li>").text(data.director));
+            $(i).append($("<li>").text(data.producer));
+            $(i).append($("<li>").text(data.release_date));
+            })
+
+            $.get( "https://swapi.co/api/films/2/", function(data)
+          {
+            var i = ".f2";
+            $(i).append($("<li>").text(data.title));
+            $(i).append($("<li>").text(data.episode_id));
+            $(i).append($("<li>").text(data.director));
+            $(i).append($("<li>").text(data.producer));
+            $(i).append($("<li>").text(data.release_date));
+            })
+
+
+            $.get( "https://swapi.co/api/planets/1/", function(data)
+          {
+            var i = ".pla1";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.rotation_period));
+            $(i).append($("<li>").text(data.orbital_period));
+            $(i).append($("<li>").text(data.diameter));
+            $(i).append($("<li>").text(data.climate));
+            $(i).append($("<li>").text(data.gravity));
+            $(i).append($("<li>").text(data.terrain));
+            $(i).append($("<li>").text(data.surface_water));
+            $(i).append($("<li>").text(data.population));
+
+            })
+
+            $.get( "https://swapi.co/api/planets/2/", function(data)
+          {
+            var i = ".pla2";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.rotation_period));
+            $(i).append($("<li>").text(data.orbital_period));
+            $(i).append($("<li>").text(data.diameter));
+            $(i).append($("<li>").text(data.climate));
+            $(i).append($("<li>").text(data.gravity));
+            $(i).append($("<li>").text(data.terrain));
+            $(i).append($("<li>").text(data.surface_water));
+            $(i).append($("<li>").text(data.population));
+
+            })
+
+            $.get( "https://swapi.co/api/planets/8/", function(data)
+          {
+            var i = ".pla8";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.rotation_period));
+            $(i).append($("<li>").text(data.orbital_period));
+            $(i).append($("<li>").text(data.diameter));
+            $(i).append($("<li>").text(data.climate));
+            $(i).append($("<li>").text(data.gravity));
+            $(i).append($("<li>").text(data.terrain));
+            $(i).append($("<li>").text(data.surface_water));
+            $(i).append($("<li>").text(data.population));
+
+            })
+
+            $.get( "https://swapi.co/api/people/1/?format=json", function(data)
+          {
+            var i = ".per1";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.height));
+            $(i).append($("<li>").text(data.mass));
+            $(i).append($("<li>").text(data.hair_color));
+            $(i).append($("<li>").text(data.skin_color));
+            $(i).append($("<li>").text(data.eye_color));
+            $(i).append($("<li>").text(data.birth_year));
+            $(i).append($("<li>").text(data.gender));
+            })
+
+            $.get( "https://swapi.co/api/people/2/?format=json", function(data)
+          {
+            var i = ".per2";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.height));
+            $(i).append($("<li>").text(data.mass));
+            $(i).append($("<li>").text(data.hair_color));
+            $(i).append($("<li>").text(data.skin_color));
+            $(i).append($("<li>").text(data.eye_color));
+            $(i).append($("<li>").text(data.birth_year));
+            $(i).append($("<li>").text(data.gender));
+            })
+
+            $.get( "https://swapi.co/api/people/3/?format=json", function(data)
+          {
+            var i = ".per3";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.height));
+            $(i).append($("<li>").text(data.mass));
+            $(i).append($("<li>").text(data.hair_color));
+            $(i).append($("<li>").text(data.skin_color));
+            $(i).append($("<li>").text(data.eye_color));
+            $(i).append($("<li>").text(data.birth_year));
+            $(i).append($("<li>").text(data.gender));
+            })
+
+            $.get( "https://swapi.co/api/people/4/?format=json", function(data)
+          {
+            var i = ".per4";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.height));
+            $(i).append($("<li>").text(data.mass));
+            $(i).append($("<li>").text(data.hair_color));
+            $(i).append($("<li>").text(data.skin_color));
+            $(i).append($("<li>").text(data.eye_color));
+            $(i).append($("<li>").text(data.birth_year));
+            $(i).append($("<li>").text(data.gender));
+            })
+
+            $.get( "https://swapi.co/api/people/5/?format=json", function(data)
+          {
+            var i = ".per5";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.height));
+            $(i).append($("<li>").text(data.mass));
+            $(i).append($("<li>").text(data.hair_color));
+            $(i).append($("<li>").text(data.skin_color));
+            $(i).append($("<li>").text(data.eye_color));
+            $(i).append($("<li>").text(data.birth_year));
+            $(i).append($("<li>").text(data.gender));
+            })
+
+            $.get( "https://swapi.co/api/people/6/?format=json", function(data)
+          {
+            var i = ".per6";
+            $(i).append($("<li>").text(data.name));
+            $(i).append($("<li>").text(data.height));
+            $(i).append($("<li>").text(data.mass));
+            $(i).append($("<li>").text(data.hair_color));
+            $(i).append($("<li>").text(data.skin_color));
+            $(i).append($("<li>").text(data.eye_color));
+            $(i).append($("<li>").text(data.birth_year));
+            $(i).append($("<li>").text(data.gender));
+            })
+
+          })
+    </script>
+
+</body>
+</html>
