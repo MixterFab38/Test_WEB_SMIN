@@ -1,10 +1,12 @@
-$icon-font-path: '../fonts/';
-// bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-// endbower
 $blue: #222;
 @import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootswatch/dist/cerulean/variables";
+@import "node_modules/bootswatch/dist/cerulean/bootswatch";
 
+$icon-font-path: '../fonts/';
+// bower:scss
+// endbower
 
 .browserupgrade {
   margin: 0.2em 0;
